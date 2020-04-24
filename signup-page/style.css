@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: Lato; 
+}
+
+.header-nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: baseline; 
+    padding: 5px 30px; 
+}
+
+header a {
+    text-decoration: none; 
+}
+
+nav {
+    width: 800px; 
+    flex-grow: 1; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    font-weight: bold; 
+}
+
+.selected-nav {
+    color: #343160;
+}
+
+.selected-nav hr {
+    border: 0;
+    height: 1px;
+    background: #343160; 
+    width: 50%; 
+}
+
+.unselected-nav {
+    color: black; 
+}
+
+.dribbble-logo {
+    width: 150px; 
+    align-self: center; 
+}
+
+.login-button {
+    border: 2px solid #343160; 
+    border-radius: 20px; 
+    color: #343160; 
+    margin-right: 20px; 
+    padding: 5px 30px; 
+}
+
+.signup-button {
+    border: 2px solid #343160; 
+    border-radius: 20px; 
+    padding: 5px 30px; 
+    background-color: #343160;
+    color: white;
+}
+
+#front-page {
+    display: flex;
+}
+
+.left-fp {
+    flex-grow: 1; 
+}
+
+.text-fp {
+    width: 500px; 
+    margin-top: 100px; 
+    margin-left: 100px; 
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 60px; 
+    line-height: 1.6; 
+}
+
+.text-fp p {
+    font-size: 20px; 
+}
+
+form input {
+    background-color: #FDEDEE; 
+    border: none; 
+    border-radius: 20px; 
+    
+}
+
+.image-fp {
+    width: 600px; 
+    height: 800px; 
+}
