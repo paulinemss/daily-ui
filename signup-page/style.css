@@ -28,18 +28,31 @@ nav ul {
     font-weight: bold; 
 }
 
-.selected-nav {
-    color: #343160;
+#selected-nav {
+    color: #FC6A5B;
 }
 
-.selected-nav hr {
+#selected-nav hr {
+    visibility: visible; 
+}
+
+nav a:hover {
+    color: #FC6A5B;
+}
+
+nav a hr {
+    visibility: hidden;
     border: 0;
     height: 1px;
-    background: #343160; 
+    background: #FC6A5B; 
     width: 50%; 
 }
 
-.unselected-nav {
+nav a:hover hr {
+    visibility: visible; 
+}
+
+nav a {
     color: black; 
 }
 
@@ -86,17 +99,63 @@ h1 {
 }
 
 .text-fp p {
+    margin-top: -20px;
+    margin-bottom: 50px; 
     font-size: 20px; 
 }
 
 form input {
     background-color: #FDEDEE; 
     border: none; 
+    border-radius: 20px 0px 0px 20px; 
+    padding: 10px 30px; 
+    width: 300px; 
+    color: #FC6A5B; 
+    font-weight: bold; 
+    font-family: Lato; 
+}
+
+form input:focus {
+    outline: none; 
+}
+
+::placeholder {
+    color: #FC6A5B; 
+    font-weight: bold; 
+}
+
+.searchButton {
+    background-color: #FC6A5B; 
+    border: none; 
+    color: white; 
+    padding: 10px 30px; 
     border-radius: 20px; 
-    
+    margin-left: -20px; 
+    font-weight: bold; 
+}
+
+hr.line-separator {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 7px 7px -7px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    position: absolute; 
+    right: 0;
+    left: -1215px; 
+    margin-top: 570px; 
+}
+
+.bottom-links {
+    margin-top: 190px; 
+    margin-left: -40px; 
+}
+
+.bottom-links a {
+    text-decoration: none; 
+    color: black; 
 }
 
 .image-fp {
     width: 600px; 
-    height: 800px; 
+    height: 800px;
 }
