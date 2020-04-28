@@ -2,7 +2,7 @@
 Daily ui challenges
 
 1. Sign Up: https://paulinedailyui.netlify.app/signup-page/
-2. Checkout
+2. Checkout: https://paulinedailyui.netlify.app/checkout
 3. Landing Page 
 4. Calculator 
 5. App Icon 
