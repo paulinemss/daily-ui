@@ -33,18 +33,77 @@
         </header>
 
         <div id="front-page"> 
-            <section id="payment-details">
 
+            <section id="left-fp">
+                <ul>
+                    <li>Account</li>
+                    <li>Shipping</li>
+                    <li>Payment</li>
+                    <li>Review</li>
+                </ul>
+                <h1>Payment Details</h1>
+                <form action="#" method="get">
+                    <label for="card-name">Name on card</label><br>
+                    <input type="text" id="card-name" name="card-name" placeholder="John Smith"><br>
+                    <label for="card-number">Card number</label><br>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 - 5678 - 9101 - 1121"><br>
+                    <label for="card-exp">Expiration</label> <label for="card-cvc">CVC <a href="#"><i class="fas fa-info-circle fp-icons"></i></a></label><br>
+                    <input type="text" id="card-exp" name="card-exp" placeholder="03"> / <input type="text" id="card-exp" name="card-exp" placeholder="12">
+                    <input type="text" id="card-cvc" name="card-cvc" placeholder="123"><br>
+                    <input type="submit" value="Review order">
+                </form>
             </section>
 
-            <section id="order-summary"> 
-
+            <section id="right-fp"> 
+                <div id="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="order-summary__books">
+                        <img class="order-books" src="images/book-1.jpg" alt="The Haunting of Hill House book" />
+                        <p>
+                            The Haunting of Hill House (Paperback)<br>
+                            <span class="line-price"><a href="#"><i class="fas fa-minus-square fp-icons"></i></a> 1 <a href="#"><i class="fas fa-plus-square fp-icons"></i></a> x €7.40</span>
+                        </p>
+                        <a href="#"><i class="fas fa-times fp-icons"></i></a>
+                    </div>
+                    <div class="order-summary__books" id="order-summary__Quiet">
+                        <img class="order-books" src="images/book-2.jpg" alt="Quiet book" />
+                        <p>
+                            Quiet: The Power of Introverts in a World That Can't Stop Talking (Paperback)<br>
+                            <span class="line-price"><a href="#"><i class="fas fa-minus-square fp-icons"></i></a> 1 <a href="#"><i class="fas fa-plus-square fp-icons"></i></a> x €9.99</span>
+                        </p>
+                        <a href="#"><i class="fas fa-times fp-icons"></i></a>
+                    </div>
+                </div>
+                <hr>
+                <div id="discount-code">
+                    <form action="#" method="get">
+                        <label for="discount-form">Gift card/Discount code</label><br>
+                        <input type="text" id="discount-form" name="discount-form">
+                        <input type="submit" value="Apply">
+                    </form>
+                </div>
+                <hr>
+                <div id="total-summary">
+                    <div class="total-summary__rows">
+                        <p>Subtotal</p>
+                        <p>€17.39</p>
+                    </div>
+                    <div class="total-summary__rows">
+                        <p>Tax</p>
+                        <p>€3.48</p>
+                    </div>
+                    <div class="total-summary__rows">
+                        <p>Shipping</p>
+                        <p>€0.00</p>
+                    </div>
+                    <div class="total-summary__rows">
+                        <p>Total</p>
+                        <p>€20.87</p>
+                    </div>
+                </div>
             </section>
+
         </div>
-
-        <footer>
-            
-        </footer>
 
     </body>
 
