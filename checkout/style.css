@@ -68,12 +68,208 @@ header hr {
 
 #left-fp {
     flex-grow: 1; 
+    margin: 40px 100px; 
+}
+
+#left-fp ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: space-evenly; 
+    position: relative; 
+    width: 550px; 
+}
+
+#left-fp ul li {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+}
+
+.circle-stage {
+    background-color: #2E86DF; 
+    width: 10px;
+    height: 10px; 
+    border-radius: 50%; 
+    background-clip: content-box;
+    margin: 0 auto; 
+    padding: 2px;
+    border: 2px solid #2E86DF; 
+    position: relative; 
+}
+
+.spacer {
+    background-color: #2E86DF; 
+    height: 3px;
+    flex-grow: 1; 
+    margin-top: 8px; 
+    margin-left: -10px;
+}
+
+#circle-account::after {
+    content: "";
+    height: 3px;
+    width: 100%; 
+    background-color: #2E86DF; 
+    position: absolute; 
+    top: 6px; 
+    left: 14px;
+}
+
+#circle-shipping::before {
+    content: "";
+    height: 3px;
+    width: 100px; 
+    background-color: #2E86DF; 
+    position: absolute; 
+    top: 6px; 
+    right: 14px;
+}
+
+#circle-shipping::after {
+    content: "";
+    height: 3px;
+    width: 100%; 
+    background-color: #2E86DF; 
+    position: absolute; 
+    top: 6px; 
+    left: 14px;
+}
+
+#circle-payment {
+    border: 2px solid #BAC0BD; 
+}
+
+#circle-payment::before {
+    content: "";
+    height: 3px;
+    width: 100px; 
+    background-color: #2E86DF; 
+    position: absolute; 
+    top: 6px; 
+    right: 14px;
+}
+
+#circle-payment::after {
+    content: "";
+    height: 3px;
+    width: 100%; 
+    background-color: #BAC0BD; 
+    position: absolute; 
+    top: 6px; 
+    left: 14px;
+}
+
+.spacer-grey {
+    background-color: #BAC0BD; 
+    height: 3px;
+    flex-grow: 1; 
+    margin-top: 8px; 
+    margin-left: -10px;
+}
+
+#circle-review {
+    background-color: #BAC0BD; 
+    border: 2px solid #BAC0BD;
+}
+
+#circle-review::before {
+    content: "";
+    height: 3px;
+    width: 100px; 
+    background-color: #BAC0BD; 
+    position: absolute; 
+    top: 6px; 
+    right: 14px;
+}
+
+.form-label {
+    color: #3F3C3A; 
+    font-weight: 400; 
+    padding-left: 13px;
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+#payment-details {
+    margin-left: 40px; 
+    margin-top: 50px; 
+    width: 550px; 
+}
+
+#payment-details label {
+    margin-top: 10px; 
+}
+
+h1 {
+    font-weight: 500; 
+    font-size: 25px; 
+}
+
+.payment-input {
+    background-color: rgba(186, 192, 189, 0.2);
+    height: 40px; 
+    width: 100%;  
+    border: none; 
+    border-radius: 5px; 
+}
+
+.expiration-cvc {
+    display: flex; 
+}
+
+.expiration-input {
+    display: flex; 
+    align-items: baseline; 
+}
+
+.expiration-input p {
+    margin-right: 10px;
+    margin-left: 10px; 
+    margin-block-start: 0;
+    margin-block-end: 0; 
+}
+
+.expiration-input input {
+    width: 60px; 
+}
+
+.cvc-form {
+    margin-left: 20px; 
+    flex-grow: 1; 
+}
+
+::placeholder {
+    padding-left: 20px; 
+    font-size: 15px; 
+    font-family: Source Sans Pro; 
+}
+
+#review-button {
+    background-color: #2E86DF; 
+    border: 1.5px solid #2E86DF; 
+    color: white; 
+    height: 40px; 
+    border-radius: 5px; 
+    padding-left: 60px; 
+    padding-right: 60px; 
+    margin-top: 20px; 
+}
+
+.bottom-links {
+    margin-top: 40px; 
+    margin-left: 40px; 
+}
+
+.bottom-links a {
+    text-decoration: none;
+    font-size: 13px; 
+    color: black; 
 }
 
 /* right front page css elements */
 
 #right-fp {
-    width: 500px; 
+    width: 450px; 
     border-left: 1px solid #BAC0BD; 
 }
 
@@ -112,8 +308,27 @@ h2 {
 }
 
 .order-books {
-    width: 150px; 
+    width: 120px; 
     height: auto; 
+}
+
+#discount-form {
+    background-color: rgba(186, 192, 189, 0.2);
+    height: 40px; 
+    width: 250px; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+#apply-button {
+    background-color: white; 
+    border: 1.5px solid #2E86DF; 
+    color: #2E86DF; 
+    height: 40px; 
+    border-radius: 5px; 
+    padding-left: 25px; 
+    padding-right: 25px; 
+    margin-left: 10px; 
 }
 
 .total-summary__rows {

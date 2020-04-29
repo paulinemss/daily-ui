@@ -36,22 +36,44 @@
 
             <section id="left-fp">
                 <ul>
-                    <li>Account</li>
-                    <li>Shipping</li>
-                    <li>Payment</li>
-                    <li>Review</li>
+                    <div class="line-stage"></div>
+                    <li><div class="circle-stage" id="circle-account"></div>Account</li>
+                    <div class="spacer"></div>
+                    <li><div class="circle-stage" id="circle-shipping"></div>Shipping</li>
+                    <div class="spacer"></div>
+                    <li><div class="circle-stage" id="circle-payment"></div>Payment</li>
+                    <div class="spacer-grey"></div>
+                    <li><div class="circle-stage" id="circle-review"></div>Review</li>
                 </ul>
-                <h1>Payment Details</h1>
-                <form action="#" method="get">
-                    <label for="card-name">Name on card</label><br>
-                    <input type="text" id="card-name" name="card-name" placeholder="John Smith"><br>
-                    <label for="card-number">Card number</label><br>
-                    <input type="text" id="card-number" name="card-number" placeholder="1234 - 5678 - 9101 - 1121"><br>
-                    <label for="card-exp">Expiration</label> <label for="card-cvc">CVC <a href="#"><i class="fas fa-info-circle fp-icons"></i></a></label><br>
-                    <input type="text" id="card-exp" name="card-exp" placeholder="03"> / <input type="text" id="card-exp" name="card-exp" placeholder="12">
-                    <input type="text" id="card-cvc" name="card-cvc" placeholder="123"><br>
-                    <input type="submit" value="Review order">
-                </form>
+                <div id="payment-details">
+                    <h1>Payment Details</h1>
+                    <form action="#" method="get">
+                        <label for="card-name" class="form-label">Name on card</label>
+                        <input type="text" id="card-name" name="card-name" placeholder="John Smith" class="payment-input"><br>
+                        <label for="card-number" class="form-label">Card number</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="1234 - 5678 - 9101 - 1121" class="payment-input"><br>
+                        <div class="expiration-cvc">
+                            <div class="expiration-form">
+                                <label for="card-exp" class="form-label">Expiration</label> 
+                                <div class="expiration-input">
+                                    <input type="text" id="card-exp" name="card-exp" placeholder="03" class="payment-input"> 
+                                    <p>/</p> 
+                                    <input type="text" id="card-exp" name="card-exp" placeholder="12" class="payment-input">
+                                </div>
+                            </div>
+                            <div class="cvc-form">
+                                <label for="card-cvc" class="form-label">CVC <a href="#"><i class="fas fa-info-circle fp-icons"></i></a></label>
+                                <input type="text" id="card-cvc" name="card-cvc" placeholder="123" class="payment-input"><br>
+                            </div>
+                        </div>
+                        <input type="submit" value="Review order" id="review-button">
+                    </form>
+                </div>
+                <div class="bottom-links">
+                    <a href="https://github.com/paulinemss/daily-ui" target="_blank">Find more daily UI challenges on my GitHub - <u>www.github.com</u></a>
+                    <br>
+                    <a href="https://dribbble.com/shots/6495631-Credit-card-checkout" target="_blank">Design inspired by Rose Chang on dribbble - <u>www.dribbble.com</u></a>
+                </div>
             </section>
 
             <section id="right-fp"> 
@@ -60,16 +82,16 @@
                     <div class="order-summary__books">
                         <img class="order-books" src="images/book-1.jpg" alt="The Haunting of Hill House book" />
                         <p>
-                            The Haunting of Hill House (Paperback)<br>
-                            <span class="line-price"><a href="#"><i class="fas fa-minus-square fp-icons"></i></a> 1 <a href="#"><i class="fas fa-plus-square fp-icons"></i></a> x €7.40</span>
+                            <b style="color:#645E56">The Haunting of Hill House</b> (Paperback)<br><br>
+                            <span class="line-price"><a href="#"><i class="fas fa-minus-square fp-icons"></i></a> 1 <a href="#"><i class="fas fa-plus-square fp-icons"></i></a> x </span>€7.40
                         </p>
                         <a href="#"><i class="fas fa-times fp-icons"></i></a>
                     </div>
                     <div class="order-summary__books" id="order-summary__Quiet">
                         <img class="order-books" src="images/book-2.jpg" alt="Quiet book" />
                         <p>
-                            Quiet: The Power of Introverts in a World That Can't Stop Talking (Paperback)<br>
-                            <span class="line-price"><a href="#"><i class="fas fa-minus-square fp-icons"></i></a> 1 <a href="#"><i class="fas fa-plus-square fp-icons"></i></a> x €9.99</span>
+                            <b style="color:#645E56">Quiet: The Power of Introverts in a World That Can't Stop Talking</b> (Paperback)<br><br>
+                            <span class="line-price"><a href="#"><i class="fas fa-minus-square fp-icons"></i></a> 1 <a href="#"><i class="fas fa-plus-square fp-icons"></i></a> x </span>€9.99
                         </p>
                         <a href="#"><i class="fas fa-times fp-icons"></i></a>
                     </div>
@@ -77,9 +99,9 @@
                 <hr>
                 <div id="discount-code">
                     <form action="#" method="get">
-                        <label for="discount-form">Gift card/Discount code</label><br>
+                        <label for="discount-form" class="form-label">Gift card/Discount code</label>
                         <input type="text" id="discount-form" name="discount-form">
-                        <input type="submit" value="Apply">
+                        <input type="submit" value="Apply" id="apply-button">
                     </form>
                 </div>
                 <hr>
@@ -97,8 +119,8 @@
                         <p>€0.00</p>
                     </div>
                     <div class="total-summary__rows">
-                        <p>Total</p>
-                        <p>€20.87</p>
+                        <p><b>Total</b></p>
+                        <p><b>€20.87</b></p>
                     </div>
                 </div>
             </section>
