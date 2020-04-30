@@ -159,3 +159,12 @@ hr.line-separator {
     width: 600px; 
     height: 800px;
 }
+
+@media screen and (max-width: 1265px) {
+    .login-button {
+        padding: 4px 20px;
+    }
+    .signup-button {
+        padding: 4px 20px;
+    }
+}
