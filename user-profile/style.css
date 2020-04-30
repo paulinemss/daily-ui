@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body {
+    margin: 0; 
+    background: #e9edf3;
+}
+
+.main-container {
+    font-family: 'Open Sans'; 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
+    margin-left: -20px; 
+    flex-wrap: wrap;
+}
+
+.phone-container {
+    width: 300px;
+    height: 600px;
+    background: #fff;
+    margin-left: 20px; 
+    position: relative; 
+}
+
+.phone-container_background {
+    background: #fd7766; 
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    width: 300px; 
+    height: 280px; 
+    border-radius: 0 0 25px 25px; 
+    opacity: 0.9; 
+}
+
+.phone-container_content {
+    position: relative; 
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 10px 0 10px 20px; 
+    color: #fff;
+}
+
+.phone-container_time-mobile-icons {
+    font-size: 12px; 
+    display: flex; 
+    justify-content: space-between; 
+    padding-right: 20px; 
+}
+
+.phone-container_title-user {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+    align-items: stretch; 
+    height: 80px; 
+    padding-right: 20px; 
+}
+
+.phone-container_title {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    font-size: 25px; 
+}
+
+.main-title {
+    font-weight: 600; 
+    font-size: 31px; 
+}
+
+.user-picture {
+    width: 60px; 
+    border-radius: 50%; 
+}
+
+.phone-container_date {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 40px; 
+    font-size: 16px; 
+    height: 45px; 
+}
+
+.selected-date {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.selected-date i {
+    font-size: 8px; 
+}
+
+.selected-today {
+    font-size: 23px; 
+    line-height: 16px; 
+}
+
+@media screen and (max-width: 400px) {
+    .main-container {
+        margin-bottom: 20px;
+        margin-top: 0px; 
+    }
+    .phone-container {
+        width: 100%; 
+        margin-top: 20px;  
+    }
+}
