@@ -13,6 +13,9 @@ body {
     justify-content: space-between; 
     align-items: center; 
     padding: 10px 20px; 
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .nav-bar a {
@@ -71,6 +74,7 @@ body {
     border-right: 1px solid #f1f1f1;
     width: 250px; 
     height: calc(100vh - 50px); 
+    top: 50px; 
     padding: 40px 0 40px 20px; 
     box-sizing: border-box; 
     display: flex;
@@ -105,7 +109,8 @@ body {
 }
 
 .main-left-menu-items {
-    padding: 10px 0; 
+    padding: 10px 0;
+    cursor: pointer;  
 }
 
 .menu-icons {
@@ -117,13 +122,28 @@ body {
     margin-left: 10px; 
 }
 
-.selected-element {
+a.active {
     border-right: 3px solid #f07167; 
     margin-right: -2px;
 }
 
-.selected-item {
+a.active div {
     color: #212121;
+}
+
+a.active:hover {
+    border-right: 3px solid #f07167; 
+    margin-right: -2px;
+}
+
+a.active div:hover {
+    color: #212121;
+}
+
+.buttons:hover {
+    color: rgba(33, 33, 33, 0.7);
+    border-right: 3px solid rgb(240, 113, 103, 0.2); 
+    margin-right: -2px;
 }
 
 .main-left-bottom a {
@@ -138,14 +158,21 @@ body {
 
 /* CSS right front page elements */
 
-.main-right-user {
+.main-right {
+    margin-top: 50px; 
     margin-left: 250px; 
     height: calc(100vh - 50px); 
     width: calc(100vw - 250px); 
+    display: none; 
+}
+
+.main-right.active {
+    display: flex; 
 }
 
 .main-right-user-elements {
     padding: 70px 100px; 
+    width: 100%; 
 }
 
 .main-right-header {
@@ -258,7 +285,7 @@ body {
 
 .main-right-attribution a {
     text-decoration: none;
-    color: #212121;
+    color: #333333;
 }
 
 /* CSS media query elements */
@@ -267,7 +294,7 @@ body {
     .main-left {
         display: none; 
     }
-    .main-right-user {
+    .main-right {
         margin-left: 0; 
         width: 100vw; 
     }
@@ -285,6 +312,9 @@ body {
     }
     .main-right-form-element {
         width: 100%; 
+    }
+    .main-right-user-elements {
+        padding: 60px; 
     }
 }
 

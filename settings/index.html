@@ -27,23 +27,23 @@
                         <h1>User Profile</h1>
                     </div>
                     <div class="main-left-menu">
-                        <a href="#" class="selected-element"><div class="main-left-menu-items selected-item">
+                        <a id="button-user" class="buttons active"><div class="main-left-menu-items">
                             <i class="fal fa-user menu-icons"></i>
                             <span>User Info</span>
                         </div></a>
-                        <a href="#"><div class="main-left-menu-items">
+                        <a id="button-favorites" class="buttons"><div class="main-left-menu-items">
                             <i class="fal fa-heart menu-icons"></i>
                             <span>Favorites</span>
                         </div></a>
-                        <a href="#"><div class="main-left-menu-items">
+                        <a id="button-watchlist" class="buttons"><div class="main-left-menu-items">
                             <i class="fal fa-star menu-icons"></i>
                             <span>Watchlist</span>
                         </div></a>
-                        <a href="#"><div class="main-left-menu-items">
+                        <a id="button-settings" class="buttons"><div class="main-left-menu-items">
                             <i class="fal fa-cog menu-icons"></i>
                             <span>Settings</span>
                         </div></a>
-                        <a href="#"><div class="main-left-menu-items">
+                        <a id="button-notifications" class="buttons"><div class="main-left-menu-items">
                             <i class="fal fa-bell bell-icon"></i>
                             <span>Notifications</span>
                         </div></a>
@@ -54,7 +54,7 @@
                     <span>Log out</span></a>
                 </div>
             </section>
-            <section class="main-right-user">
+            <section class="main-right active" id="main-right-user">
                 <div class="main-right-user-elements">
                     <div class="main-right-header">
                         <div class="main-right-header-media">
@@ -113,8 +113,22 @@
                     </div>
                 </div>
             </section>
+            <section class="main-right" id="main-right-favorites">
+                <span>Favorites</span>
+            </section>
+            <section class="main-right" id="main-right-watchlist">
+                <span>Watchlist</span>
+            </section>
+            <section class="main-right" id="main-right-settings">
+                <span>Settings</span>
+            </section>
+            <section class="main-right" id="main-right-notifications">
+                <span>Notifications</span>
+            </section>
         </main>
 
     </body>
+
+    <script src="script.js"></script>
 
 </html>
