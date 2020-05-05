@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: "Noto Sans JP";
+    margin: 0; 
+}
+
+/* CSS header nav elements */
+
+.nav-bar {
+    border-bottom: 1px solid #f1f1f1;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #403d3c; 
+}
+
+.right-nav-bar {
+    display: flex;
+    align-items: center; 
+    color: #898989;
+    width: 200px; 
+    justify-content: space-between; 
+}
+
+.bell-icon {
+    font-size: 20px; 
+    position: relative; 
+}
+
+.bell-icon::after {
+    content: " "; 
+    width: 8px;
+    height: 8px; 
+    border-radius: 50%; 
+    background-color: #f07167; 
+    position: absolute; 
+    top: 1.5px;
+    left: 9px;
+}
+
+.right-nav-image {
+    width: 30px;
+    border-radius: 50%; 
+}
+
+.right-nav-bar span {
+    font-size: 14px; 
+}
+
+.right-nav-bar a {
+    text-decoration: none;
+    color: #898989;
+    font-size: 12px; 
+}
+
+/* CSS main page elements */
+
+.main-page {
+    display: flex;
+}
+
+/* CSS left front page elements */
+
+.main-left {
+    border-right: 1px solid #f1f1f1;
+    width: 250px; 
+    height: calc(100vh - 50px); 
+    padding: 40px 0 40px 20px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    position: fixed; 
+    color: #1a1a1a;
+    font-weight: 500; 
+}
+
+.main-left-top {
+    height: 60%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.main-left-title h1 {
+    margin: 0; 
+}
+
+.main-left-menu { 
+    height: 80%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+
+.main-left-menu a {
+    text-decoration: none;
+    color: #a3a09f;
+}
+
+.main-left-menu-items {
+    padding: 10px 0; 
+}
+
+.menu-icons {
+    font-size: 20px; 
+}
+
+.main-left-menu-items span {
+    font-size: 14px; 
+    margin-left: 10px; 
+}
+
+.selected-element {
+    border-right: 3px solid #f07167; 
+    margin-right: -2px;
+}
+
+.selected-item {
+    color: #212121;
+}
+
+.main-left-bottom a {
+    text-decoration: none;
+    color: #f07167;
+    font-weight: bold; 
+}
+
+.main-left-bottom span {
+    margin-left: 10px; 
+}
+
+/* CSS right front page elements */
+
+.main-right-user {
+    margin-left: 250px; 
+    height: calc(100vh - 50px); 
+    width: calc(100vw - 250px); 
+}
+
+.main-right-user-elements {
+    padding: 70px 100px; 
+}
+
+.main-right-header {
+    display: flex; 
+}
+
+.main-right-header-media {
+    display: flex; 
+}
+
+.main-right-header-img {
+    width: 100px; 
+    border-radius: 50%; 
+}
+
+.main-right-header-btn {
+    display: flex;
+    align-items: flex-end; 
+    margin-left: -20px; 
+    margin-bottom: 10px; 
+}
+
+.main-right-header-btn a {
+    background-color: #f07167; 
+    color: white; 
+    font-size: 10px; 
+    border-radius: 50%; 
+    padding: 3px 6px; 
+    box-shadow: 3px 3px 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.main-right-header-title {
+    margin-top: 25px; 
+    margin-left: 30px; 
+}
+
+.main-right-header-title h2 {
+    margin: 0; 
+    font-weight: 500; 
+    font-size: 22px; 
+}
+
+.main-right-header-title span {
+    color: #a9a9a9;
+}
+
+.main-right-form {
+    margin-top: 30px; 
+}
+
+.main-right-form-row {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.main-right-form-element {
+    display: flex;
+    flex-direction: column; 
+    width: 45%; 
+    padding: 10px 0; 
+}
+
+.form-label {
+    color: #979797; 
+    font-weight: 600; 
+    font-size: 12px; 
+    margin-left: 10px; 
+    margin-bottom: 5px; 
+}
+
+.form-input {
+    background-color: #fbfbfb; 
+    border: 1px solid #f1f1f1; 
+    border-radius: 5px; 
+    height: 30px; 
+    font-family: "Noto Sans JP";
+    text-align: center; 
+}
+
+.form-input:focus {
+    outline: none; 
+    background-color: #fff; 
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.02);
+}
+
+.main-right-button {
+    display: flex; 
+    justify-content: center;
+    margin-top: 30px; 
+}
+
+.main-right-button-link {
+    background-color: #f07167; 
+    border-radius: 5px; 
+    padding: 6px 40px; 
+}
+
+.main-right-button-link a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px; 
+}
+
+/* CSS media query elements */
+
+@media only screen and (max-width: 900px) {
+    .main-left {
+        display: none; 
+    }
+    .main-right-user {
+        margin-left: 0; 
+        width: 100vw; 
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .main-right-user-elements {
+        padding: 70px; 
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .main-right-form-row {
+        flex-direction: column; 
+    }
+    .main-right-form-element {
+        width: 100%; 
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .main-right-user-elements {
+        padding: 40px; 
+    }
+    .main-right-header-img {
+        width: 70px; 
+        height: 70px; 
+    }
+    .main-right-header-title h2 {
+        font-size: 18px; 
+    }
+    
+    .main-right-header-title span {
+        font-size: 14px;
+    }
+}
