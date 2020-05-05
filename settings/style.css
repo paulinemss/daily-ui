@@ -249,6 +249,18 @@ body {
     font-size: 14px; 
 }
 
+.main-right-attribution {
+    display: flex;
+    flex-direction: column; 
+    font-size: 10px; 
+    margin-top: 30px; 
+}
+
+.main-right-attribution a {
+    text-decoration: none;
+    color: #212121;
+}
+
 /* CSS media query elements */
 
 @media only screen and (max-width: 900px) {
