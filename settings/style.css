@@ -170,7 +170,7 @@ a.active div:hover {
     display: flex; 
 }
 
-.main-right-user-elements {
+.main-right-elements {
     padding: 70px 100px; 
     width: 100%; 
 }
@@ -301,7 +301,7 @@ a.active div:hover {
 }
 
 @media only screen and (max-width: 680px) {
-    .main-right-user-elements {
+    .main-right-elements {
         padding: 70px; 
     }
 }
@@ -313,13 +313,13 @@ a.active div:hover {
     .main-right-form-element {
         width: 100%; 
     }
-    .main-right-user-elements {
+    .main-right-elements {
         padding: 60px; 
     }
 }
 
 @media only screen and (max-width: 390px) {
-    .main-right-user-elements {
+    .main-right-elements {
         padding: 40px; 
     }
     .main-right-header-img {
