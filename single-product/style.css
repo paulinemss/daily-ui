@@ -135,6 +135,10 @@ body {
     margin-left: 320px; 
 }
 
+.right-page-menu {
+    display: none; 
+}
+
 .right-page-highlight {
     background-color: #f9f9fb;
     width: 100%; 
@@ -234,6 +238,10 @@ body {
     width: 200px; 
 }
 
+.view-all {
+    display: none; 
+}
+
 .book-release { 
     width: 150px; 
     border-radius: 10px;
@@ -274,24 +282,51 @@ body {
 
 /* CSS media query elements */
 
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 1386px) {
     .right-page-highlight__images {
-        align-self: flex-end; 
-        margin-left: 100px; 
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (max-width: 1071px) {
+    .right-page-highlight__images {
+        margin-left: 90px; 
         margin-right: 80px; 
+    }
+    .highlight-back {
+        width: 80px; 
+    }
+    .highlight-front {
+        width: 120px; 
+    }
+    .right-page-highlight__title h1 {
+        font-size: 28px; 
     }
     .right-page-releases__allbooks {
         flex-wrap: wrap; 
         flex-wrap: wrap; 
         margin-top: 0; 
-        justify-content: flex-start;
+        justify-content: space-evenly;
     }
     .right-page-releases__book {
         margin-top: 20px; 
     }
-}
-
-@media only screen and (max-width: 950px) {
+    .view-all {
+        display: flex; 
+    }
+    .view-all button {
+        background-color: #f6f7fa; 
+        border: none; 
+        width: 150px; 
+        font-size: 16px; 
+        border-radius: 10px; 
+        font-weight: 600; 
+        height: 230px; 
+        cursor: pointer; 
+    }
+    .right-page-releases__button {
+        display: none; 
+    }
     .right-page-highlight {
         height: 200px; 
     }
@@ -305,18 +340,121 @@ body {
         font-size: 12px; 
     }  
     .right-page-highlight__links span {
-        font-size: 10px; 
+        font-size: 14px; 
     }
     .right-page-highlight__images {
         align-self: flex-end; 
         margin-left: 0; 
-        margin-right: 0; 
+        margin-right: 100px; 
     }
     .highlight-back {
         width: 60px; 
     }
-    
     .highlight-front {
         width: 100px; 
+    }
+    .right-page-highlight {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+    .right-page-highlight__images {
+        margin-right: 50px; 
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .left-page {
+        display: none; 
+    }
+    .right-page {
+        margin-left: 20px; 
+    }
+    .right-page-menu {
+        display: flex; 
+        font-size: 20px; 
+        color: #c1c1ca; 
+        justify-content: space-between;
+        padding: 0 10px 20px 10px; 
+    }
+    .right-page-menu a {
+        text-decoration: none; 
+        font-size: 20px; 
+        color: #c1c1ca; 
+    }
+    .right-page-menu__icons-right a {
+        margin-left: 10px; 
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .right-page-highlight__images {
+        margin-right: 20px; 
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .right-page-highlight {
+        flex-direction: column; 
+        height: 100%;
+    }
+    .right-page-highlight__title {
+        display: flex;
+        flex-wrap: wrap; 
+        padding: 30px 20px 0px 20px; 
+    }
+    .right-page-highlight__images {
+        margin-right: 60px; 
+    }
+    .right-page-highlight__links {
+        margin-top: 15px; 
+    }
+    .title {
+        padding-left: 10px; 
+    }
+    .right-page {
+        padding: 20px; 
+    }
+    .right-page-releases__title h1 {
+        font-size: 20px; 
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .book-release {
+        width: 90px; 
+    }
+    .right-page-releases__book h2 {
+        width: 90px; 
+        font-size: 14px; 
+    }
+    .right-page-releases__book span {
+        width: 90px; 
+        font-size: 12px; 
+    }
+    .book-rating {
+        width: 90px; 
+        font-size: 12px; 
+    }
+    .right-page-releases__book {
+        width: 120px; 
+    }
+    .view-all button {
+        width: 90px; 
+        height: 137px; 
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    .title {
+        padding-left: 0; 
+    }
+    .right-page-highlight__title {
+        flex-wrap: nowrap;
+        flex-direction: column; 
+    }
+    .right-page-highlight__images {
+        margin-right: 40px;
     }
 }
