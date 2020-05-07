@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     padding: 40px; 
     box-sizing: border-box; 
+    position: fixed; 
 }
 
 .separating-bar {
@@ -131,6 +132,7 @@ body {
     width: 100%; 
     box-sizing: border-box; 
     padding: 40px; 
+    margin-left: 320px; 
 }
 
 .right-page-highlight {
@@ -176,7 +178,8 @@ body {
 
 .right-page-highlight__images {
     align-self: flex-end; 
-    margin-left: 150px; 
+    margin-left: 200px; 
+    margin-right: 100px; 
 }
 
 .highlight-back {
@@ -187,4 +190,133 @@ body {
 .highlight-front {
     width: 160px; 
     border-radius: 10px;
+}
+
+.right-page-releases {
+    margin-top: 30px; 
+}
+
+.right-page-releases__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-page-releases__title h1 {
+    font-family: 'Libre Baskerville'; 
+    margin: 0; 
+    font-weight: 600; 
+}
+
+.right-page-releases__title a {
+    text-decoration: none; 
+    font-weight: 600; 
+    color: #302f2f; 
+}
+
+.right-page-releases__button {
+    background-color: #f6f7fa; 
+    padding: 10px;
+    border-radius: 10px;  
+}
+
+.right-page-releases__allbooks {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 20px; 
+    margin-left: -20px;
+}
+
+.right-page-releases__book {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 200px; 
+}
+
+.book-release { 
+    width: 150px; 
+    border-radius: 10px;
+}
+
+.right-page-releases__book h2 {
+    margin: 0;
+    font-family: 'Libre Baskerville'; 
+    font-size: 18px; 
+    font-weight: bold; 
+    width: 150px; 
+    margin-top: 5px; 
+}
+
+.right-page-releases__book span {
+    width: 150px; 
+    margin-top: 5px; 
+    color: #8c8c9e; 
+}
+
+.book-rating {
+    width: 150px; 
+    color: #ffd43a; 
+    margin-top: 5px; 
+}
+
+.right-page-attribution {
+    margin-top: 30px; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.right-page-attribution a {
+    text-decoration: none; 
+    color: #302f2f; 
+    font-size: 12px; 
+}
+
+/* CSS media query elements */
+
+@media only screen and (max-width: 1070px) {
+    .right-page-highlight__images {
+        align-self: flex-end; 
+        margin-left: 100px; 
+        margin-right: 80px; 
+    }
+    .right-page-releases__allbooks {
+        flex-wrap: wrap; 
+        flex-wrap: wrap; 
+        margin-top: 0; 
+        justify-content: flex-start;
+    }
+    .right-page-releases__book {
+        margin-top: 20px; 
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .right-page-highlight {
+        height: 200px; 
+    }
+    .right-page-highlight__title {
+        padding: 40px 30px; 
+    }
+    .right-page-highlight__title h1 {
+        font-size: 20px;  
+    }
+    .right-page-highlight__links i {
+        font-size: 12px; 
+    }  
+    .right-page-highlight__links span {
+        font-size: 10px; 
+    }
+    .right-page-highlight__images {
+        align-self: flex-end; 
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+    .highlight-back {
+        width: 60px; 
+    }
+    
+    .highlight-front {
+        width: 100px; 
+    }
 }
