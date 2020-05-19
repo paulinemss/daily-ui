@@ -5,3 +5,31 @@ body {
     font-family: 'Source Sans Pro';
     margin: 0;
 }
+
+.menu-left {
+    position: fixed;
+    height: 100vh;
+    width: 150px;
+    background: rgb(6,131,254);
+    background: linear-gradient(190deg, rgba(6,131,254,1) 35%, rgba(30,165,250,1) 100%);
+    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 20px; 
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.menu-left button {
+    background: none; 
+    border: none; 
+    color: #fff;
+    cursor: pointer; 
+    font-size: 20px; 
+}
+
+.menu-left_middle {
+    display: flex;
+    flex-direction: column; 
+}
