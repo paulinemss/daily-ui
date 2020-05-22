@@ -180,6 +180,15 @@ body {
     background-color: #fafcfd; 
 }
 
+.main-right_bottomform {
+    margin-bottom: 20px; 
+    display: flex; 
+    border: 1px solid #f5f7fe; 
+    background: #fff;
+    padding: 20px; 
+    border-radius: 30px;
+}
+
 .main-right_bottomelements {
     display: flex; 
 }
