@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    background-color: #fee2e3; 
+    margin: 0;
+    font-family: 'Noto Sans JP'; 
+    color: #202020;  
+}
+
+.main {
+    display: flex; 
+    margin: 20px 0 20px -40px; 
+    justify-content: center; 
+}
+
+.phone {
+    background-color: #fff;
+    width: 375px; 
+    height: 667px; 
+    margin-left: 40px; 
+    border-radius: 30px; 
+    box-shadow: 8px 8px 10px 5px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-search {
+    background-color: #f8f4f9;
+    height: 120px; 
+}
+
+.phone-search_content {
+    display: flex; 
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 40px 30px 0 30px; 
+}
+
+.phone-search_title {
+    font-size: 22px; 
+    font-weight: 500; 
+}
+
+.phone-search_icon {
+    font-size: 24px; 
+    background-color: #fcfbfd; 
+    padding: 10px 15px; 
+    border-radius: 10px; 
+    cursor: pointer;
+}
+
+.phone-results {
+    flex-grow: 1; 
+}
+
+.phone-bottom {
+    background-color: #f8f4f9; 
+    height: 100px; 
+    display: flex;
+    align-items: center; 
+}
+
+.phone-bottom_content {
+    width: 100%;
+    display: flex; 
+    justify-content: space-around; 
+    margin: 0 30px; 
+}
+
+.phone-bottom_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 20px; 
+    border-radius: 10px; 
+}
+
+.phone-bottom_btnicon {
+    font-size: 24px;
+}
+
+.phone-bottom_btntitle {
+    font-size: 16px;
+}
+
+.active {
+    background-color: #edeef7;
+    color: #244ea0;
+}
+
+.phone-highlight {
+    background-color: #ffb1b9;
+    height: 240px; 
+}
+
+.phone-highlight_content {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px; 
+    box-sizing: border-box;
+}
+
+.phone-highlight_back i {
+    font-size: 26px; 
+    cursor: pointer;
+}
+
+.phone-highlight_mainicon {
+    background-color: #f8f5f9; 
+    align-self: center;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.phone-highlight_mainicon i {
+    font-size: 32px; 
+    align-self: center; 
+}
+
+.phone-highlight_details {
+    display: flex; 
+    justify-content: space-between;
+    font-size: 15px; 
+}
+
+.phone-highlight_iteminfo {
+    font-weight: 600; 
+}
+
+.phone-jobdescription {
+    flex-grow: 1; 
+}
+
+/* media queries */
+
+@media screen and (max-width: 880px) {
+    .main {
+        flex-direction: column;
+        align-items: center; 
+        margin: 0 0 20px 0; 
+    }
+    .phone {
+        margin: 20px 0 0 0; 
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .phone {
+        width: 100%;
+        border-radius: 0; 
+        box-shadow: none; 
+    }
+}
