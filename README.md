@@ -8,3 +8,4 @@ Currently learning front end development, I am challenging myself with daily UI 
 3. User Profile: https://paulinedailyui.netlify.app/user-profile/
 4. Settings: https://paulinedailyui.netlify.app/settings/
 5. Single Product: https://paulinedailyui.netlify.app/single-product/
+6. Job Listing: https://paulinedailyui.netlify.app/job-listing/
