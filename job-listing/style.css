@@ -52,6 +52,66 @@ body {
 
 .phone-results {
     flex-grow: 1; 
+    overflow-y: auto; 
+}
+
+.phone-results_job {
+    padding: 20px 30px;
+    border-bottom: 2px solid #faf8fb; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.phone-results_jobtitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-results_company {
+    font-weight: 800; 
+    cursor: pointer; 
+}
+
+.phone-results_tags {
+    margin-top: 10px; 
+}
+
+.phone-results_tags button {
+    border: none; 
+    cursor: pointer; 
+    padding: 5px 8px; 
+    border-radius: 8px; 
+    outline: none; 
+    font-weight: 600; 
+}
+
+.java {
+    background-color: #dfd5ff;
+    color: #8a69e2; 
+}
+.vue {
+    background-color: #cdffbc;
+    color: #74c259; 
+}
+.spring {
+    background-color: #def3ff;
+    color: #70b0f2; 
+}
+
+.phone-results_jobright {
+    cursor: pointer;
+    background-color: #faf8fb; 
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-results_jobright i {
+    font-size: 24px; 
 }
 
 .phone-bottom {
@@ -136,7 +196,57 @@ body {
 }
 
 .phone-jobdescription {
-    flex-grow: 1; 
+    height: 340px; 
+    overflow-y: auto; 
+}
+
+.phone-jobdescription_content {
+    padding: 30px; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.phone-jobdescription_content h1 {
+    margin: 0;
+    font-weight: 400; 
+    font-size: 24px; 
+}
+
+.phone-jobdescription_content h2 {
+    margin: 0;
+    font-weight: 700; 
+    font-size: 20px; 
+}
+
+.phone-jobdescription_content h3 {
+    margin: 8px 0 0 0; 
+    font-weight: 800; 
+    font-size: 16px; 
+}
+
+.phone-jobdescription_content span {
+    font-size: 12px; 
+}
+
+.phone-jobdescription_content ul {
+    margin: 0; 
+    font-size: 12px; 
+}
+
+.phone-jobdescription_content button {
+    margin-top: 15px; 
+    align-self: center;
+    background-color: #edeef7;
+    color: #244ea0;
+    border: none; 
+    cursor: pointer;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-weight: 600; 
+}
+
+::-webkit-scrollbar {
+    display: none; 
 }
 
 /* media queries */
