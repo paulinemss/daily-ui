@@ -13,6 +13,13 @@ body {
     justify-content: center; 
 }
 
+.sources {
+    display: flex; 
+    flex-direction: column;
+    font-size: 12px; 
+    padding: 20px 40px; 
+}
+
 .phone {
     background-color: #fff;
     width: 375px; 
@@ -94,9 +101,17 @@ body {
     background-color: #cdffbc;
     color: #74c259; 
 }
-.spring {
+.react {
     background-color: #def3ff;
     color: #70b0f2; 
+}
+.jscript {
+    background-color: #ffdddc;
+    color: #f0473b; 
+}
+.angular {
+    background-color: #fff2bc;
+    color: #f4b83b;  
 }
 
 .phone-results_jobright {
