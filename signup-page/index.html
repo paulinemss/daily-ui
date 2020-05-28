@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Daily UI #1</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <head>
+        <title>Daily UI #1</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/fb136c13f9.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0"/> 
+    </head>
 
-<body>
-
-<header>
-    <div class="header-nav">
-        <img class="dribbble-logo" src="images/dribbble-logo.svg" alt="dribbble logo" />
-        <nav>
-            <ul>
-                <li><a href="#" id="selected-nav">Home <hr></a></li>
-                <li><a href="#">About <hr></a></li>
-                <li><a href="#">Courses <hr></a></li>
-                <li><a href="#">Contact <hr></a></li>
-            </ul>
-        </nav>
-        <a href="#" class="login-button">Login</a>
-        <a href="#" class="signup-button">Sign up</a>
-    </div>
-</header>
-
-<section id="front-page">
-    <div class="left-fp">
-        <div class="text-fp">
-            <h1>Make it simple, but significant</h1> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum feugiat ultricies. Maecenas nec velit euismod, maximus diam ac, ultrices ipsum.</p>
-            <form action="#" method="post">
-                <input type="text" name="searchBar" id="searchBar" placeholder="What do you want to learn?" />
-                <button class="searchButton" type="submit">Search</button>
-            </form>
-            <hr class="line-separator">
-            <div class="bottom-links">
-                <a href="https://github.com/paulinemss/daily-ui">Find more daily UI challenges on my GitHub - <u>www.github.com</u></a>
-                <br>
-                <a href="https://www.freepik.com/free-photos-vectors/background" target="_blank">Background vector created by freepik - <u>www.freepik.com</u></a>
-                <br>
-                <a href="https://dribbble.com/shots/7112023-Design-pattern-website" target="_blank">Design inspired by Bhavna Kashyap on dribbble - <u>www.dribbble.com</u></a>
+    <body>
+        <section class="background">
+            <img class="background-img" src="images/background-img.png" alt="background image" />
+        </section>
+        <section class="main">
+            <div class="main-top">
+                <i class="fab fa-less"></i>
             </div>
-        </div>
-    </div>
-    <div class="right-fp">
-        <img class="image-fp" src="images/front-page-img.png" alt="photo of leaves" />
-    </div>
-</section>
+            <div class="main-section">
+                <div class="main-section_steps">
+                    <div class="main-section_number active">
+                        <a href="#">1</a>
+                    </div>
+                    <div class="main-section_number">
+                        <a href="#">2</a>
+                    </div>
+                    <div class="main-section_number">
+                        <a href="#">3</a>
+                    </div>
+                </div>
+                <div class="main-section_step1">
+                    <div class ="main-section_step1_title">
+                        <h1>Welcome to {less}</h1>
+                        <p>Let's get your account set up. <br>Create your password to begin.</p>
+                    </div>
+                    <div class="main-section_step1_form">
+                        <form>
+                            <label for="password" class="label-form">Password <span style="color:#3f48cc;">*</span></label>
+                            <div class="input-box">
+                                <input type="text" id="password" name="password" placeholder="●●●●●●●">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <button class="next-btn">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="main-bottom">
+                <div class="main-bottom_help">
+                    <a href="#">Help + Support</a>
+                </div>
+                <div class="main-bottom_terms">
+                    By signing up you agree to our <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </section>
+    </body>
 
-</body>
 </html>
